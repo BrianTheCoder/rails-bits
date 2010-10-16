@@ -16,12 +16,6 @@ gem 'typhoeus'
 gem 'vanity', :git => 'git://github.com/BrianTheCoder/vanity.git'
 gem 'yajl-ruby', :require => 'yajl'
 
-group :development do
-  gem 'wirble'
-  gem 'randexp'
-  gem 'faker'
-end
-
 file '.gitignore', <<-FILE
   .DS_Store
   log/*.log
@@ -52,6 +46,8 @@ unless fb_app_id.blank?
   puts "Enter facebook secret"
   services[:facebook][:services] = gets.chomp
 end
+
+plugin 'mobile-fu', :git => 'git://github.com/brendanlim/mobile-fu.git'
 
 initializer 'mongo_mapper.rb', <<-EOF
   if ENV['MONGOHQ_URL']
