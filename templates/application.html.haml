@@ -1,0 +1,9 @@
+!!! 5
+%html
+  %head
+    %title Beerspotin
+    =stylesheet_link_tag "screen"
+    =csrf_meta_tag
+  %body
+    =yield
+    =javascript_include_tag 'jquery', 'underscore', 'remote_auth', 'jquery/form', 'jquery/tools'

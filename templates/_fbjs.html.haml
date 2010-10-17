@@ -1,0 +1,17 @@
+#fb-root
+:javascript
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId  : #{SiteConfig[:facebook][:app_id]},
+      status : true,
+      cookie : true,
+      logging: true
+    });
+  };
+
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());

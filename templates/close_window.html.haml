@@ -1,0 +1,8 @@
+!!!
+%html(html_attrs)
+  %head
+    %meta(content='text/html;charset=UTF-8' http-equiv='content-type')
+  %body
+    :javascript
+      opener.Window.authorized["#{params[:name]}"] = true;
+      self.close();

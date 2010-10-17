@@ -1,0 +1,22 @@
+!!!5
+%html
+  %head
+    %meta(charset="UTF-8")/
+    %title Beerspot.in
+    =stylesheet_link_tag 'jqtouch', 'theme'
+    =javascript_include_tag 'jquery', 'jqtouch', 'mobile', :cache => 'mobile_cache'
+  %body
+    #jqt
+      #start
+        .toolbar
+          %h1 Beerspot.in
+          %a.add.slideup(href="#add") +
+      #add.edit
+        %form
+          .toolbar
+            %h1 Nearby
+            %a.btn2.goback(href="#") Cancel
+          %ul.rounded
+            %li
+              %input#todo(placeholder="Enter your todo..." type="text")/
+          %a.whiteButton(href="#" style="margin: 10px") Add
