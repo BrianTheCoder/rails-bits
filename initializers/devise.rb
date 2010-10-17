@@ -3,7 +3,7 @@
 Devise.setup do |config|
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in DeviseMailer.
-  config.mailer_sender = "cicerone@beerspot.in"
+  config.mailer_sender = ""
 
   # ==> ORM configuration
   # Load and configure the ORM. Supports :active_record (default) and
@@ -15,7 +15,7 @@ Devise.setup do |config|
   # using other encryptors, it sets how many times you want the password re-encrypted.
   config.stretches = 10
   config.encryptor = :bcrypt
-  config.pepper = "f0484a3ed9b60f04dbcec4fbf70d0c0f87d62e09804a7cbb1e73d6bf194c2e3ea8ade4d4f955494f24e42fb073b1d6818fc51238172ca6012d655dc02de849d4"
+  config.pepper = ""
   config.confirm_within = 2.days
   # ==> Configuration for :rememberable
   # The time the user will be remembered without asking for credentials again.
